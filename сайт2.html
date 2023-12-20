@@ -1,0 +1,201 @@
+<style>
+header {
+    background-color:lightgray;
+
+}
+header .menu{
+    display:inline-flex;
+    flex-wrap : no-wrap;
+    justify-content : space-evenly;
+	align-items: flex-end;
+    width : 50%;
+}
+header h2{
+  display: inline-block;
+  width: 47%;
+  margin-left: 1%;
+  padding: 0.5%;
+  vertical-align: center;
+  color: #000;
+}
+
+
+header div.menu a {
+  display: inline-block;
+  margin: 1%;
+  padding: 0.5%;
+  text-decoration: none;
+  color: #164b69;
+  font-weight: bold;
+  font-size: 23;
+  text-align: center;
+}
+
+header div.menu a.active{
+	color :yellow;
+	background-color:gray;
+}
+
+.gallery{
+	display:flex;
+    flex-wrap : wrap;
+	width : 80%;
+	margin: 0.5% auto;
+	justify-content : center;
+}
+
+.gallery .head-img{
+	display: block;
+	width: 100%;
+	
+}
+.gallery img{
+	width: 49%;
+	margin: 0.5%;	
+}
+
+.main {
+	display:flex;
+    flex-wrap : no-wrap;
+	width : 80%;
+	margin: 0.5% auto;
+	justify-content : space-between;
+}
+
+.main .content{
+	width:30%;
+	border: solid thin gray;
+	background-color: lightgray;
+	text-align: center;
+}
+
+.content img{
+	margin: 2%;
+	width: 80%;
+}
+
+.content-flex{
+	display:flex;
+	flex-direction: column;
+	width:30%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content-flex .item{
+	width:100%;
+	background-color: lightgray;
+	margin:1%;
+}
+.item img{
+	display: inline-block;
+	float: left;
+	width: 46%;
+	margin: 2%;
+}
+
+.contact1{
+ width: 50%;
+ text-align: left;
+ float: left;
+}
+.contact2{
+ width: 50%;
+ text-align: right;
+ float: left;
+}
+
+@media (max-width: 800px){
+	header {
+		text-align: center;
+	}
+	header h2 {
+		width: 0%;
+		color: #d3d3d3;
+	}
+	header div.menu {
+		flex-wrap: wrap;
+	}
+	header div.menu a {
+		width: 47%;
+	}
+	
+	.gallery img{
+		width: 100%;
+		margin: 0.5%;
+		align:left;
+	}
+	.main {
+		flex-wrap: wrap;
+	}
+	.main .content{
+		margin: 0.5%;
+		width:100%;
+	}
+	
+	.content-flex{
+		width:100%;
+	}
+	.title{
+	width:0%;
+	}
+	.title h2{
+	color: lightgray;
+	}
+	.head
+	{
+		text-align:center;
+	}
+}
+
+</style>
+
+<!DOCTYPE html>
+<body>
+	<header>
+    <h2>Электрогитары</h2>
+      <div class="menu">
+		<a class="active" href="index.html">Самые известные гитары</a>
+		<a href="#">Список популярных гитар</a>
+		<a href="#">Stratocaster</a>
+      </div>
+	</header>
+	<div class="gallery">
+		<img class="head-img" src="https://www.statefarmstadium.com/assets/img/Metallica_1600x600-9571cde4e7.png">
+		<img  src="https://images.universal-music.de/img/assets/571/571015/992/720/metallica.jpg">
+		<img  src="https://images.universal-music.de/img/assets/571/571015/992/720/metallica.jpg">
+	</div>
+	
+	<div class="main">
+		<div class="content">
+			<img  src="https://www.volksfreund.de/imgs/28/5/8/9/0/6/8/5/tok_582d03ad6bb1785a5a497dcbc75456dd/w680_h510_x340_y255_metallica3-0798fa8a90fd1d19.jpg">
+			<h3>ESP</h3>
+			<p>ESP James Hetfield - это сигнатурная серия гитар, выпущенная японским производителем музыкальных инструментов ESP Guitars для лидера и вокалиста группы Metallica, Джеймса Хэтфилда. Гитары этой серии обычно имеют корпус из махагона, накладку из палисандра, наклейку с изображением черепа и кости, а также два звукоснимателя EMG. Они также часто имеют характерный дизайн с вырезом в верхней части корпуса, что делает их узнаваемыми и популярными среди фанатов Metallica</p>
+		</div>
+		<div class="content">
+			<img  src="https://roundwound.ru/wp-content/uploads/2019/11/Kirk_Hammett_06_18.jpg">
+			<h3>Gibson</h3>
+			<p>Гитара Gibson Кирка Хэмметта - это сигнатурная серия гитар, выпущенная американским производителем музыкальных инструментов Gibson для гитариста группы Metallica, Кирка Хэмметта. Гитары этой серии обычно имеют корпус из махагона, накладку из палисандра, наклейку с изображением черепа и кости, а также два звукоснимателя EMG. Они также часто имеют характерный дизайн с вырезом в верхней части корпуса, что делает их узнаваемыми и популярными среди фанатов Metallica. Гитары Gibson Кирка Хэмметта также известны своим мощным звуком и отличной играбельностью, что делает их популярными среди музыкантов различных жанров.</p>
+		</div>
+		<div class="content-flex">
+			<div class="item">
+				<img  src="https://avatars.dzeninfra.ru/get-zen_doc/1711766/pub_5e73f732441c2a303839d95e_5e73fa4370e1fb013646d150/scale_1200">
+				<h4>Gibson Les Paul</h4>
+				<p>Gibson Les Paul - это одна из самых известных и популярных серий гитар, выпускаемых компанией Gibson. Она была создана в 1952 году.</p>
+			</div>
+			<div class="item">
+				<img  src="https://www.ibanez.com/common/product_artist_file/file/a_main_PaulGilbert.jpg">
+				<h4>Ibanez</h4>
+				<p>Ibanez Paul Gilbert Signature Model - это электрогитара, разработанная в сотрудничестве с известным гитаристом Полом Гилбертом. </p>
+			</div>
+			<div class="item">
+				<img  src="https://i.ytimg.com/vi/hBvIx4RjPR0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBEA_7zzOydj_ahoEMTwEdteJOdLQ">
+				<h4>Ibanez GRX70QA</h4>
+				<p>Ibanez GRX70QA - это электрогитара, которая представляет собой отличное сочетание качественного звука, стильного дизайна и доступной цены.</p>
+			</div>
+		</div>
+	</div>
+	<hr>
+<div class="contact1"> © Omelchenko M.A., B9121-09.03.04progin(3), 2023-2024</div>
+<div class="contact2"> ✉ Контакты</div>
+</body>
